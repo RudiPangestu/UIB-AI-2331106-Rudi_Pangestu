@@ -5,32 +5,22 @@ Metodologi
 Model ini menggunakan tiga variabel input untuk menghasilkan satu variabel output:
 
 Input:
-
 Kualitas Tidur (Buruk, Sedang, Baik)
-
 Jam Belajar (Rendah, Normal, Tinggi)
-
 Durasi Tidur (Pendek, Cukup, Panjang)
 
 Output:
-
 Tingkat Stres (Rendah, Sedang, Tinggi)
-
 Prosesnya meliputi Fuzzifikasi (mengubah angka menjadi kategori linguistik), menerapkan 8 Aturan IF-THEN untuk menghubungkan input ke output (contoh: JIKA Kualitas Tidur Buruk MAKA Stres Tinggi), dan Defuzzifikasi (mengubah hasilnya menjadi skor stres numerik).
 
 Hasil Utama dan Kolom Insight Baru
 Model ini menghasilkan dua kolom insight baru yang ditambahkan ke dataset asli untuk setiap mahasiswa:
 
 Stress_Score: Sebuah skor numerik presisi (dengan rentang 0-10) yang merupakan hasil perhitungan langsung dari mesin logika fuzzy. Semakin tinggi skor, semakin tinggi pula tingkat stres yang diidentifikasi model.
-
 Stress_Category: Sebuah label kategori (Rendah, Sedang, Tinggi) yang dibuat berdasarkan Stress_Score. Kolom ini menyederhanakan skor numerik menjadi kesimpulan yang mudah dibaca dan dianalisis.
 
 Distribusi mahasiswa berdasarkan Stress_Category adalah sebagai berikut:
-
 Stres Tinggi: 51 mahasiswa (10.2%)
-
 Stres Sedang: 373 mahasiswa (74.6%)
-
 Stres Rendah: 76 mahasiswa (15.2%)
-
 Hasil paling signifikan adalah identifikasi ~10% mahasiswa yang menunjukkan tanda-tanda stres tinggi, sebuah kelompok yang bisa menjadi fokus perhatian lebih lanjut.
